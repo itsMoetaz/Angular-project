@@ -8,6 +8,7 @@ import { HeaderComponent } from './header/header.component';
 import { FormsModule } from '@angular/forms';
 import { FirstLettreUpperPipe } from './first-lettre-upper.pipe';
 import { TestDirective } from './test.directive';
+import { ListcategoriesComponent } from './listcategories/listcategories.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { TestDirective } from './test.directive';
     FirstComponent,
     HeaderComponent,
     FirstLettreUpperPipe,
-    TestDirective
+    TestDirective,
+    ListcategoriesComponent
   ],
   imports: [
     BrowserModule,

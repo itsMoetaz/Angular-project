@@ -1,0 +1,14 @@
+<div class="container" *ngFor="let c of  categories; let i=index">
+    <div class="row" >
+      <div class="col-md-4" style="margin-bottom: 20px;">
+        <img (click)="m(i)"src="{{c.image}}" alt="{{c.title}}" class="img-fluid h-50 w-75">
+        <h3>{{c.title |uppercase}}</h3>
+        <button class="btn btn-primary" [hidden]="!c.available">Voir produits</button>
+     
+    </div>     
+      
+      
+    </div>
+    <div *ngIf=" j!=i"> {{c.description}}</div>
+    
+  </div>
