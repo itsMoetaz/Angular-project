@@ -8,7 +8,7 @@ import { Categorie } from '../model/categorie';
 })
 export class ListcategoriesComponent {
   categories:Categorie[]=[{"id":1,"title":"Grand électroménager",
-    "image":"assets/images/categorie_electromenager.jpg", "description":"ttt",
+    "image":"assets/images/categorie_electromenager.jpg", "description":"ttbnc qs,ndqsndqst",
     "available":true},
     {"id":2,"title":"Petit électroménager",
     "image":"assets/images/categorie_petit_electromenager.jpg", "description":"yyyy",
@@ -34,4 +34,17 @@ console.log(c)
 
     show=false;
     j=-1;
+k=-1;
+des="";
+State=false;
+search="";
+    changeState(indexOfElement:any){
+      /*if(this.State)
+this.State=false;
+      else
+      this.State=true;*/
+    this.State=!this.State
+this.des=this.categories[indexOfElement].description;
+this.k=indexOfElement;
+    }
 }
