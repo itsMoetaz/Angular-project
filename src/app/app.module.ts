@@ -14,6 +14,7 @@ import { HeaderappComponent } from './shared/headerapp/headerapp.component';
 import { FooterComponent } from './shared/footer/footer.component';
 import { LoginComponent } from './shared/login/login.component';
 import { DetailsProductComponent } from './core/mangeProduct/details-product/details-product.component';
+import { UserModule } from './core/user/user.module';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { DetailsProductComponent } from './core/mangeProduct/details-product/det
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    UserModule
   ],
   providers: [],
   bootstrap: [AppComponent]

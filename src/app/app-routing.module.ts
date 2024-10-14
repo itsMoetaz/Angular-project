@@ -8,15 +8,23 @@ import { DetailsProductComponent } from './core/mangeProduct/details-product/det
 
 const routes: Routes = [
  {path:'',redirectTo:'login',pathMatch:'full'},
- {path:'detail/:idt',component:DetailsProductComponent},
-  {path:'first',component:FirstComponent},
+ {path:'product',component:ListcategoriesComponent,
+  children:[
+  {path:'detail/:idttwin2',component:DetailsProductComponent},
+   {path:'products',component:ListcategoriesComponent},
+ ]},
+ {path:'lazy',loadChildren:
+  ()=>import('./core/user/user.module')
+  .then((m)=>m.UserModule)},
+ 
+ {path:'first',component:FirstComponent},
   {path:'login',component:LoginComponent},
-  {path:'products',component:ListcategoriesComponent},
+ 
   {path:'**', component:NotfoundComponent},
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+exports: [RouterModule]
 })
 export class AppRoutingModule { }

@@ -11,6 +11,11 @@ constructor(private ac:ActivatedRoute){
 
 }
 ngOnInit(){
-  console.log(this.ac.snapshot.params['idt'])
+  //console.log(this.ac.snapshot.params['idt'])
+  this.ac.params.subscribe(
+    (d)=>{
+console.log(d)
+    }
+  )
 }
 }
