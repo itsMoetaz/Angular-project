@@ -15,6 +15,7 @@ import { FooterComponent } from './shared/footer/footer.component';
 import { LoginComponent } from './shared/login/login.component';
 import { DetailsProductComponent } from './core/mangeProduct/details-product/details-product.component';
 import { UserModule } from './core/user/user.module';
+import { AddProductComponent } from './core/mangeProduct/add-product/add-product.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { UserModule } from './core/user/user.module';
     HeaderappComponent,
     FooterComponent,
     LoginComponent,
-    DetailsProductComponent
+    DetailsProductComponent,
+    AddProductComponent
   ],
   imports: [
     BrowserModule,

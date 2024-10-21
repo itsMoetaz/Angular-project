@@ -1,0 +1,6 @@
+form .ng-invalid{
+    border: red solid 2px;
+}
+form .ng-valid{
+    border: green solid 2px;
+}

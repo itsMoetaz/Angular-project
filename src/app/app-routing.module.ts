@@ -5,10 +5,13 @@ import { ListcategoriesComponent } from './listcategories/listcategories.compone
 import { NotfoundComponent } from './shared/notfound/notfound.component';
 import { LoginComponent } from './shared/login/login.component';
 import { DetailsProductComponent } from './core/mangeProduct/details-product/details-product.component';
+import { AddProductComponent } from './core/mangeProduct/add-product/add-product.component';
 
 const routes: Routes = [
  {path:'',redirectTo:'login',pathMatch:'full'},
- {path:'product',component:ListcategoriesComponent,
+ {path:'add',component:AddProductComponent},
+
+ {path:'products',component:ListcategoriesComponent,
   children:[
   {path:'detail/:idttwin2',component:DetailsProductComponent},
    {path:'products',component:ListcategoriesComponent},

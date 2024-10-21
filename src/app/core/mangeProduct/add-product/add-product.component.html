@@ -1,0 +1,21 @@
+<form #f="ngForm">
+    <label>name</label>
+    <input type="text" name="test" ngModel required minlength="3" #n="ngModel">
+    <div *ngIf="n.invalid && n.touched">
+        <div *ngIf="n?.errors?.['required']">
+required
+        </div>
+        <div *ngIf="n?.errors?.['minlength']">
+            minlength
+                    </div>
+    </div>
+    <label>email</label>
+    <input type="text" name="email" [(ngModel)]="product.email">
+    <label>tel</label>
+    <input type="text" name="tel" ngModel pattern="[0-9]{8}" id="test">
+    <div *ngIf="n.invalid && n.touched">
+        pattern
+    </div>
+    <input type="submit" value="add" (click)="showF(n)" [disabled]="f.invalid">
+
+</form>
