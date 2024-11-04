@@ -16,6 +16,6 @@ required
     <div *ngIf="n.invalid && n.touched">
         pattern
     </div>
-    <input type="submit" value="add" (click)="showF(n)" [disabled]="f.invalid">
+    <input type="submit" value="add" (click)="showF(f)" [disabled]="f.invalid">
 
 </form>

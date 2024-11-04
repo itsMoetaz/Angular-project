@@ -6,11 +6,12 @@ import { NotfoundComponent } from './shared/notfound/notfound.component';
 import { LoginComponent } from './shared/login/login.component';
 import { DetailsProductComponent } from './core/mangeProduct/details-product/details-product.component';
 import { AddProductComponent } from './core/mangeProduct/add-product/add-product.component';
+import { ReactiveformComponent } from './reactiveform/reactiveform.component';
 
 const routes: Routes = [
  {path:'',redirectTo:'login',pathMatch:'full'},
  {path:'add',component:AddProductComponent},
-
+ {path:'react',component:ReactiveformComponent},
  {path:'products',component:ListcategoriesComponent,
   children:[
   {path:'detail/:idttwin2',component:DetailsProductComponent},

@@ -1,0 +1,40 @@
+<br>
+<br>
+<br>
+<label>login</label>
+<input type="text" [formControl]="l">
+<label>pwd</label>
+<input type="text" [formControl]="pwd">
+<input type="submit" value="save" (click)="showL()">
+<hr>
+<form [formGroup]="fg">
+<label>login fg</label>
+<input type="text" formControlName="login">
+<div *ngIf="fg.get('login')?.invalid">
+  <div *ngIf="fg.get('login')?.errors?.['required']">
+required
+  </div>
+<div *ngIf="fg.get('login')?.errors?.['minlength']">
+    sgdfgdsfg
+  </div>
+</div>
+<label>pwd fg</label>
+<input type="text" formControlName="password">
+<input type="submit" value="savefg" (click)="showfg()" [hidden]="fg.invalid">
+</form>
+<hr>
+<form [formGroup]="fgb">
+    <label>login fg</label>
+    <input type="text" formControlName="loginfg">
+    
+    <label>pwd fg</label>
+    <input type="text" formControlName="passwordfg">
+    <div *ngFor="let a of Skillstwin2.controls;let i=index" formArrayName="skills">
+        <input type="text" formControlName="{{i}}">
+        <input type="submit" value="-" (click)="removeElementFromFormArray(i)">
+    </div>
+    <input type="submit" value="+" (click)="addElementToSkills()">
+    <br>
+    <input type="submit" value="savefg" (click)="showfgb()" >
+    
+</form>

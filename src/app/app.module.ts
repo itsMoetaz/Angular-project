@@ -5,7 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FirstComponent } from './first/first.component';
 import { HeaderComponent } from './header/header.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { FirstLettreUpperPipe } from './first-lettre-upper.pipe';
 import { TestDirective } from './test.directive';
 import { ListcategoriesComponent } from './listcategories/listcategories.component';
@@ -16,6 +16,7 @@ import { LoginComponent } from './shared/login/login.component';
 import { DetailsProductComponent } from './core/mangeProduct/details-product/details-product.component';
 import { UserModule } from './core/user/user.module';
 import { AddProductComponent } from './core/mangeProduct/add-product/add-product.component';
+import { ReactiveformComponent } from './reactiveform/reactiveform.component';
 
 @NgModule({
   declarations: [
@@ -30,13 +31,15 @@ import { AddProductComponent } from './core/mangeProduct/add-product/add-product
     FooterComponent,
     LoginComponent,
     DetailsProductComponent,
-    AddProductComponent
+    AddProductComponent,
+    ReactiveformComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    UserModule
+    UserModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
