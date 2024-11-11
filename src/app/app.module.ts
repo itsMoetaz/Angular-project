@@ -17,6 +17,9 @@ import { DetailsProductComponent } from './core/mangeProduct/details-product/det
 import { UserModule } from './core/user/user.module';
 import { AddProductComponent } from './core/mangeProduct/add-product/add-product.component';
 import { ReactiveformComponent } from './reactiveform/reactiveform.component';
+import { MobileComponent } from './mobile/mobile.component';
+import { TvComponent } from './tv/tv.component';
+import { ShowOneProductComponent } from './show-one-product/show-one-product.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +35,10 @@ import { ReactiveformComponent } from './reactiveform/reactiveform.component';
     LoginComponent,
     DetailsProductComponent,
     AddProductComponent,
-    ReactiveformComponent
+    ReactiveformComponent,
+    MobileComponent,
+    TvComponent,
+    ShowOneProductComponent
   ],
   imports: [
     BrowserModule,
