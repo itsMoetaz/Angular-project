@@ -12,4 +12,10 @@ export class TvComponent {
   
   
   ]
+
+  afterreciveData(e:any){
+    //console.log(e);
+    let index=this.tv.indexOf(e);
+    this.tv[index].like++
+  }
 }

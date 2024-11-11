@@ -8,7 +8,7 @@ import { Component, EventEmitter, Input, Output } from '@angular/core';
 export class ShowOneProductComponent {
 @Input()p:any;
 @Output()increaseLike=new EventEmitter();
-sendNotifToParent(){
-  this.increaseLike.emit('bonjour');
+sendNotifToParent(p:any){
+  this.increaseLike.emit(p);
 }
 }

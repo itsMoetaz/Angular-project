@@ -1,4 +1,4 @@
 <p>tv works!</p>
 <div *ngFor="let produit of tv">
-    <app-show-one-product [p]="produit"></app-show-one-product>
+    <app-show-one-product [p]="produit" (increaseLike)="afterreciveData($event)"></app-show-one-product>
     </div>
