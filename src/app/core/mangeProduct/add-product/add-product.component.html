@@ -19,3 +19,20 @@ required
     <input type="submit" value="add" (click)="showF(f)" [disabled]="f.invalid">
 
 </form>
+<hr>
+<form #t="ngForm">
+    <label>name</label>
+    <input type="text" name="test" ngModel required minlength="3" #y="ngModel">
+    <div *ngIf="y.invalid ">
+      <app-error [dataInvalid]="y"></app-error>
+    </div>
+    <label>email</label>
+    <input type="text" name="email" ngModel>
+    <label>tel</label>
+    <input type="text" name="tel" ngModel pattern="[0-9]{8}" id="test">
+    <div *ngIf="n.invalid && n.touched">
+        pattern
+    </div>
+    <input type="submit" value="add" (click)="showF(f)" [disabled]="f.invalid">
+
+</form>
