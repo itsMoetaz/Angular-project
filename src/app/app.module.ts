@@ -19,10 +19,14 @@ import { AddProductComponent } from './core/mangeProduct/add-product/add-product
 import { ReactiveformComponent } from './reactiveform/reactiveform.component';
 import { MobileComponent } from './mobile/mobile.component';
 import { TvComponent } from './tv/tv.component';
+
+import { HttpClientModule } from '@angular/common/http';
 import { ShowOneProductComponent } from './show-one-product/show-one-product.component';
 import { ErrorComponent } from './shared/error/error.component';
 import { M1Component } from './m1/m1.component';
 import { M2Component } from './m2/m2.component';
+import { DetailsCategoriesComponent } from './details-categories/details-categories.component';
+import { InputdetailcategorieComponent } from './inputdetailcategorie/inputdetailcategorie.component';
 
 @NgModule({
   declarations: [
@@ -44,14 +48,17 @@ import { M2Component } from './m2/m2.component';
     ShowOneProductComponent,
     ErrorComponent,
     M1Component,
-    M2Component
+    M2Component,
+    DetailsCategoriesComponent,
+    InputdetailcategorieComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
     UserModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
