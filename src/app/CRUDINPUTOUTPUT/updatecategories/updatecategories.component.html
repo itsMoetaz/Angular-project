@@ -1,11 +1,11 @@
 <p>updatecategories works!</p>
 <form #c="ngForm">
     <label>title</label>
-    <input type="text" name="title" [(ngModel)]="p.title" required minlength="3" #n="ngModel">
+    <input type="text" name="title" [(ngModel)]="myp.title" required minlength="3" #n="ngModel">
     <label>description</label>
-    <input type="text" name="description" [(ngModel)]="p.description">
+    <input type="text" name="description" [(ngModel)]="myp.description">
     <label>imahes</label>
-    <input type="text" name="images" [(ngModel)]="p.image" id="test">
+    <input type="text" name="images" [(ngModel)]="myp.image" id="test">
     
     <input type="submit" value="add" (click)="updateCategorie(c)" >
 

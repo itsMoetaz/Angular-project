@@ -6,5 +6,5 @@
     <input type="submit" value="update" (click)="categoriselected(categor)">
 </div>
 <div *ngIf="showUpdate">
-<app-updatecategories [p]="cp"></app-updatecategories>
+<app-updatecategories [p]="cp" (notif)="updateLdite($event)" ></app-updatecategories>
 </div>

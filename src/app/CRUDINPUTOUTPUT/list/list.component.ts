@@ -22,6 +22,16 @@ this.categories=data;
 }
 categoriselected(c:any){
   this.showUpdate=true
-this.cp=c
+this.cp=c;
+}
+ id!:any;
+updateLdite(e:any){
+ this.id=e.id;
+for (let i=0;i<this.categories.length;i++){
+  
+if(this.categories[i].id==this.id){
+  this.categories[i]=e
+}
+}
 }
 }
