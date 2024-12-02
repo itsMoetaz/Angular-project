@@ -8,11 +8,15 @@ import { DetailsProductComponent } from './core/mangeProduct/details-product/det
 import { AddProductComponent } from './core/mangeProduct/add-product/add-product.component';
 import { ReactiveformComponent } from './reactiveform/reactiveform.component';
 import { DetailsCategoriesComponent } from './details-categories/details-categories.component';
+import { RemoveproductComponent } from './core/mangeProduct/removeproduct/removeproduct.component';
+import { UpdateProductComponent } from './core/mangeProduct/update-product/update-product.component';
 
 const routes: Routes = [
  {path:'',redirectTo:'login',pathMatch:'full'},
  {path:'add',component:AddProductComponent},
  {path:'react',component:ReactiveformComponent},
+ {path:'update/:id',component:UpdateProductComponent},
+ {path:'remove/:id',component:RemoveproductComponent},
  {path:'details/:id',component:DetailsCategoriesComponent},
  {path:'products',component:ListcategoriesComponent,
   children:[

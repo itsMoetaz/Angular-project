@@ -27,6 +27,12 @@ import { M1Component } from './m1/m1.component';
 import { M2Component } from './m2/m2.component';
 import { DetailsCategoriesComponent } from './details-categories/details-categories.component';
 import { InputdetailcategorieComponent } from './inputdetailcategorie/inputdetailcategorie.component';
+import { RemoveproductComponent } from './core/mangeProduct/removeproduct/removeproduct.component';
+import { UpdateProductComponent } from './core/mangeProduct/update-product/update-product.component';
+import { AddcategorieComponent } from './CRUDINPUTOUTPUT/addcategorie/addcategorie.component';
+import { UpdatecategoriesComponent } from './CRUDINPUTOUTPUT/updatecategories/updatecategories.component';
+import { DetailscategorieComponent } from './CRUDINPUTOUTPUT/detailscategorie/detailscategorie.component';
+import { ListComponent } from './CRUDINPUTOUTPUT/list/list.component';
 
 @NgModule({
   declarations: [
@@ -50,7 +56,13 @@ import { InputdetailcategorieComponent } from './inputdetailcategorie/inputdetai
     M1Component,
     M2Component,
     DetailsCategoriesComponent,
-    InputdetailcategorieComponent
+    InputdetailcategorieComponent,
+    RemoveproductComponent,
+    UpdateProductComponent,
+    AddcategorieComponent,
+    UpdatecategoriesComponent,
+    DetailscategorieComponent,
+    ListComponent
   ],
   imports: [
     BrowserModule,

@@ -8,6 +8,8 @@
         <button class="btn btn-primary" [hidden]="!c.available">Voir produits</button>
         <button class="btn btn-primary" (click)="changeState(i)" >show description product</button>
         <button class="btn btn-primary" (click)="getProduct(i)" >detail  categoies avec input</button>
+        <button class="btn btn-primary" (click)="remove(c.id)" >remove  categoies avec input</button>
+      
         <div *ngIf="State && i==k"> la description: {{des}} index: {{i}}</div>
       </div>     
       

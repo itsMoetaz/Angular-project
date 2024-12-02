@@ -1,0 +1,10 @@
+<p>list works!</p>
+<div class="container" *ngFor="let categor of  categories; let i=index">
+    <div class="col-md-4" style="margin-bottom: 20px;">
+         <h3>{{categor.title |uppercase}}</h3>
+    </div>
+    <input type="submit" value="update" (click)="categoriselected(categor)">
+</div>
+<div *ngIf="showUpdate">
+<app-updatecategories [p]="cp"></app-updatecategories>
+</div>

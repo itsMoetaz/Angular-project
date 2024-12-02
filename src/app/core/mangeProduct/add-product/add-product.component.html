@@ -36,3 +36,17 @@ required
     <input type="submit" value="add" (click)="showF(f)" [disabled]="f.invalid">
 
 </form>
+<hr>
+<h1>add product</h1>
+
+<form #c="ngForm">
+    <label>title</label>
+    <input type="text" name="title" [(ngModel)]="p.title" required minlength="3" #n="ngModel">
+    <label>description</label>
+    <input type="text" name="description" [(ngModel)]="p.description">
+    <label>imahes</label>
+    <input type="text" name="images" [(ngModel)]="p.image" pattern="[0-9]{8}" id="test">
+    
+    <input type="submit" value="add" (click)="addCategorie(c)" >
+
+</form>

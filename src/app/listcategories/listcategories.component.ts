@@ -52,4 +52,11 @@ this.categories=data;
         }
       )
     }
+    remove(id:any){
+      this.s.removeCategorie(id).subscribe(
+        ()=>{
+          alert('removed')
+        }
+      )
+    }
 }
